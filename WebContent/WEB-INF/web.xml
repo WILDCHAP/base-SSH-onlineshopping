@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>fff</display-name>
+  <!-- 注册 -->
+  <servlet>
+    <servlet-name>userRegistServlet</servlet-name>
+    <servlet-class>servlet.UserRegistServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>userRegistServlet</servlet-name>
+    <url-pattern>/user/page/userRegistServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--登录  -->
+  <servlet>
+     <servlet-name>userLoginServlet</servlet-name>
+     <servlet-class>servlet.UserLoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>userLoginServlet</servlet-name>
+     <url-pattern>/user/page/userLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--首页  -->
+    <servlet>
+     <servlet-name>allBookServlet</servlet-name>
+     <servlet-class>servlet.AllBookServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>allBookServlet</servlet-name>
+     <url-pattern>/user/page/allBookServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--书详情  -->
+  <servlet>
+    <servlet-name>detailBookServlet</servlet-name>
+    <servlet-class>servlet.DetailBookServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>detailBookServlet</servlet-name>
+    <url-pattern>/user/page/detailBookServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--退出  -->
+  <servlet>
+     <servlet-name>userLogoutServlet</servlet-name>
+     <servlet-class>servlet.UserLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>userLogoutServlet</servlet-name>
+     <url-pattern>/user/page/userLogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 异步请求-验证用户名 -->
+  <servlet>
+     <servlet-name>checkUnameServlet</servlet-name>
+     <servlet-class>servlet.CheckUnameServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>checkUnameServlet</servlet-name>
+     <url-pattern>/user/page/checkUnameServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 异步请求-验证邮箱 -->
+  <servlet>
+    <servlet-name>checkEmailServlet</servlet-name>
+    <servlet-class>servlet.CheckEmailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkEmailServlet</servlet-name>
+    <url-pattern>/user/page/checkEmailServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 异步请求-验证手机号 -->
+  <servlet>
+    <servlet-name>checkPhoneServlet</servlet-name>
+    <servlet-class>servlet.CheckPhoneServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkPhoneServlet</servlet-name>
+    <url-pattern>/user/page/checkPhoneServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 收藏功能 -->
+  <servlet>
+    <servlet-name>collectYesOrNoServlet</servlet-name>
+    <servlet-class>servlet.CollectYesOrNoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>collectYesOrNoServlet</servlet-name>
+    <url-pattern>/user/page/collectYesOrNoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 收藏列表显示 -->
+  <servlet>
+    <servlet-name>allCollectServlet</servlet-name>
+    <servlet-class>servlet.AllCollectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>allCollectServlet</servlet-name>
+    <url-pattern>/user/page/allCollectServlet</url-pattern>
+  </servlet-mapping>
+  
+    <!-- 添加购物车 -->
+  <servlet>
+    <servlet-name>addToCartServlet</servlet-name>
+    <servlet-class>servlet.AddToCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addToCartServlet</servlet-name>
+    <url-pattern>/user/page/addToCartServlet</url-pattern>
+  </servlet-mapping>
+      <!-- 购物车 -->
+  <servlet>
+    <servlet-name>allCartServlet</servlet-name>
+    <servlet-class>servlet.AllCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>allCartServlet</servlet-name>
+    <url-pattern>/user/page/allCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!--购物车删除  -->
+   <servlet>
+    <servlet-name>deleteCartServlet</servlet-name>
+    <servlet-class>servlet.DeleteCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteCartServlet</servlet-name>
+    <url-pattern>/user/page/deleteCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>updateCartNumServlet</servlet-name>
+    <servlet-class>servlet.UpdateCartNumServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateCartNumServlet</servlet-name>
+    <url-pattern>/user/page/updateCartNumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>checkUpwdServlet</servlet-name>
+    <servlet-class>servlet.CheckUpwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkUpwdServlet</servlet-name>
+    <url-pattern>/user/page/checkUpwdServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateUpwdServlet</servlet-name>
+    <servlet-class>servlet.UpdateUpwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateUpwdServlet</servlet-name>
+    <url-pattern>/user/page/updateUpwdServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>addAddressServlet </servlet-name>
+    <servlet-class>servlet.AddAddressServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addAddressServlet</servlet-name>
+    <url-pattern>/user/page/addAddressServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
